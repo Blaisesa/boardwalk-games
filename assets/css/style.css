@@ -22,10 +22,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
+    text-transform: uppercase;
 }
 
 .sub-heading-color {
     color: var(--highlight-color);
+}
+
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* navbar styles */
@@ -35,6 +41,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #navbar .logo {
     width: 30px;
+}
+/* header styles */
+#header .lead{
+    font-family: var(--secondary-font);
 }
 /* .container, 
 .row{
