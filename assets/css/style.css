@@ -1,30 +1,31 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Oswald:wght@200..700&display=swap');
-/* Custom Styles */
-:root{
-    --primary-font: 'Inter', sans-serif;
-    --secondary-font: 'Macondo', cursive;
-    --primary-color: #3a2620;
-    --secondary-color: #aa9581;
-    --highlight-color: #416a8e;
-    --light-highlight-color: #7a9fc2;
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Macondo", cursive;
+    --primary-color: #3a2620; /* dark brown */
+    --secondary-color: #aa9581; /* light brown */
+    --highlight-color: #416a8e; /* blue */
+    --highlight-color-light: #7a9fc2; /* light blue */
 }
+
+/* Global styles */
 
 body {
     font-family: var(--primary-font);
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #212529;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
 }
 
-h1, h2 {
+h1,
+h2 {
     text-transform: uppercase;
 }
 
@@ -41,7 +42,8 @@ h2 {
     margin-bottom: 2rem;
 }
 
-/* navbar styles */
+/* Navbar */
+
 #navbar {
     background-color: var(--primary-color);
 }
@@ -49,50 +51,75 @@ h2 {
 #navbar .logo {
     width: 30px;
 }
-/* header styles */
-#header .lead{
+
+/* Header */
+
+#header .lead {
     font-family: var(--secondary-font);
 }
-/* services section */
-#services .card-footer{
+
+/* Services */
+
+#services .card-footer {
     font-weight: bold;
     color: var(--highlight-color);
     background-color: transparent;
 }
 
-#services .card{
+#services .card {
     margin-bottom: 1.5rem;
 }
-/* .container, 
-.row{
+
+/* Game library cards */
+
+#new-games .card,
+#fav-games .card {
+    border: none;
+}
+
+
+/* grid visualisation CSS for testing */
+
+/* .container,
+.row {
     border: 2px solid black;
 }
 
-.col-12{
+.col-12 {
     border: 2px solid white;
     background-color: lightgray;
 } */
- @media (min-width: 768px) {
-    /* make card body same height to fix height inconsistency */
+
+/* Media queries */
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: 191px;
     }
- }
-  @media (min-width: 992px) {
-    /* make card body same height to fix height inconsistency */
+}
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: auto;
     }
- }
- @media (min-width: 1200px) {
-    /* make card body same height to fix height inconsistency */
+}
+
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 220px;
     }
- }
- @media (min-width: 1400px) {
-    /* make card body same height to fix height inconsistency */
+}
+
+/* xxl devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 195px;
     }
- }
+}
