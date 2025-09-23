@@ -72,3 +72,27 @@ h2 {
     border: 2px solid white;
     background-color: lightgray;
 } */
+ @media (min-width: 768px) {
+    /* make card body same height to fix height inconsistency */
+    #services .card-body {
+        min-height: 191px;
+    }
+ }
+  @media (min-width: 992px) {
+    /* make card body same height to fix height inconsistency */
+    #services .card-body {
+        min-height: auto;
+    }
+ }
+ @media (min-width: 1200px) {
+    /* make card body same height to fix height inconsistency */
+    #services .card-body {
+        min-height: 220px;
+    }
+ }
+ @media (min-width: 1400px) {
+    /* make card body same height to fix height inconsistency */
+    #services .card-body {
+        min-height: 195px;
+    }
+ }
